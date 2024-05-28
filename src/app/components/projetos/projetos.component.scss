@@ -1,0 +1,77 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  font-family: "Montserrat";
+
+  .card {
+    width: 30rem;
+    height: 20rem;
+    border-radius: 10px;
+    margin: 10px 40px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    color: black;
+    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+
+    img {
+      position: absolute;
+      object-fit: inherit;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 1;
+      transition: opacity 0.2s ease-out;
+    }
+
+    &:hover img {
+      transition: opacity 0.3s ease-in;
+      opacity: 0.4;
+    }
+
+    h2 {
+      position: absolute;
+      inset: auto auto 30px 30px;
+      margin: 0;
+      transition: inset 0.3s 0.3s ease-out;
+      font-weight: normal;
+      text-transform: uppercase;
+      font-family: "Montserrat";
+      color: #201f53;
+    }
+
+    p,
+    a {
+      position: absolute;
+      opacity: 0;
+      max-width: 80%;
+      transition: opacity 0.3s ease-out;
+    }
+
+    p {
+      inset: auto auto 80px 30px;
+    }
+
+    a {
+      inset: auto auto 40px 30px;
+      color: inherit;
+      text-decoration: none;
+      color: #ed0973;
+    }
+
+    &:hover h2 {
+      inset: auto auto 220px 30px;
+      transition: inset 0.3s ease-out;
+    }
+
+    &:hover p,
+    &:hover a {
+      opacity: 1;
+      transition: opacity 0.5s 0.1s ease-in;
+    }
+  }
+}

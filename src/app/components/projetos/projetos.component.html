@@ -1,0 +1,20 @@
+<h1 class="title">Projetos</h1>
+
+<div class="container">
+  <div class="card" *ngFor="let projeto of projetos">
+    <img
+      class="card__image"
+      src="{{ projeto.imagem }}"
+      alt="imagem do projeto"
+    />
+    <div class="card__content">
+      <h2 class="card__content__title">{{ projeto.titulo }}</h2>
+      <p class="card__content__description">
+        {{ projeto.descricao }}
+      </p>
+      <a href="{{ projeto.github }}" class="card__content__github"
+        >Mais informações</a
+      >
+    </div>
+  </div>
+</div>
