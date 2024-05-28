@@ -1,3 +1,12 @@
+.title {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat";
+  color: #201f53;
+  font-size: 30px;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -12,7 +21,6 @@
     border-radius: 10px;
     margin: 10px 40px;
     overflow: hidden;
-    cursor: pointer;
     position: relative;
     color: black;
     box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
@@ -24,7 +32,7 @@
       height: 100%;
       top: 0;
       left: 0;
-      opacity: 1;
+      opacity: 0.9;
       transition: opacity 0.2s ease-out;
     }
 
@@ -72,6 +80,34 @@
     &:hover a {
       opacity: 1;
       transition: opacity 0.5s 0.1s ease-in;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding: 0;
+
+    .card {
+      width: 80%;
+      height: 300px;
+
+      h2 {
+        font-size: 15px;
+      }
+
+      p,
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 435px) {
+  .container {
+    .card {
+      height: 200px;
     }
   }
 }
