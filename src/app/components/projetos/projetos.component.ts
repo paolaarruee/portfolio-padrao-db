@@ -54,7 +54,7 @@ export class ProjetosComponent {
       descricao:
         'Meu portfólio pessoal com layout concebido pela DB, utilizando Angular Material e SCSS.',
       github: 'https://github.com/paolaarruee/portfolio',
-      imagem: '../../../assets/img/projetos/naruto-java.png',
+      imagem: '../../../assets/img/projetos/portfolio-db.png',
     },
   ];
 }

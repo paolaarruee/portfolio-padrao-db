@@ -1,1 +1,57 @@
-<p>sobre works!</p>
+<div class="container">
+  <div class="header">
+    <div class="header__title">
+      <p class="header__title__introduction">Olá, meu nome é</p>
+      <p class="header__title__name">Paola Arrueé</p>
+
+      <p class="header__title__description">
+        Sou uma desenvolvedora full stack com foco em Front-end na DBServer.
+      </p>
+    </div>
+
+    <div class="header__image">
+      <img
+        src="../../../assets/img/projetos/avatar.png"
+        alt=""
+        class="header__image__profile"
+      />
+    </div>
+  </div>
+
+  <div class="information">
+    <div class="about">
+      <p class="about__title">Sobre Mim</p>
+      <p class="about__text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi labore
+        laboriosam atque adipisci rerum ullam doloribus. Eius laboriosam sit
+        vitae beatae aperiam omnis perspiciatis molestias fugiat odio dolorem?
+        Vel, molestias. Lorem ipsum dolor, sit amet consectetur adipisicing
+        elit. Fuga, voluptate! Delectus, dolores voluptatem assumenda repellat
+        laborum doloribus iusto repudiandae quia debitis, minus dolorem velit
+        voluptates fugiat, nostrum natus facere optio?
+      </p>
+    </div>
+
+    <div class="skills">
+      <p class="title-skills">Habilidades</p>
+      <div class="range" *ngFor="let skill of skills">
+        <div class="conteudo">
+          <div class="title">
+            <p>{{ skill.titulo }}</p>
+          </div>
+
+          <div class="circles">
+            <div
+              *ngFor="let _ of getFilledCircles(skill.nivel)"
+              class="circles__full-circle"
+            ></div>
+            <div
+              *ngFor="let _ of getEmptyCircles(skill.nivel)"
+              class="circles__empty-circle"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
