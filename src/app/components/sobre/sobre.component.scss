@@ -18,6 +18,7 @@
         padding: 30px 0;
         font-size: 80px;
         font-weight: 700;
+        text-wrap: nowrap;
       }
 
       &__description {
@@ -104,6 +105,178 @@
               height: 20px;
               border: 2px solid #eab53d;
               border-radius: 90%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1163px) {
+  .container {
+    padding: 40px;
+
+    .header {
+      &__title {
+        &__introduction {
+          font-size: 24px;
+        }
+
+        &__name {
+          font-size: 50px;
+        }
+
+        &__description {
+          font-size: 24px;
+        }
+      }
+    }
+
+    .information {
+      .about {
+        &__title {
+          font-size: 28px;
+        }
+
+        &__text {
+          margin-top: 20px;
+          font-size: 18px;
+        }
+      }
+
+      .skills {
+        .title-skills {
+          font-size: 28px;
+        }
+
+        .range {
+          margin-top: 20px;
+          width: 100%;
+          display: flex;
+
+          .conteudo {
+            width: 100%;
+            display: flex;
+
+            .title {
+              width: 50%;
+              font-size: 18px;
+            }
+
+            .circles {
+              width: 50%;
+              display: flex;
+              justify-content: center;
+              gap: 7px;
+
+              &__full-circle {
+                width: 18px;
+                height: 18px;
+              }
+
+              &__empty-circle {
+                width: 18px;
+                height: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 851px) {
+  .container {
+    padding: 40px;
+
+    .header {
+      flex-direction: column;
+
+      &__title {
+        width: 100%;
+      }
+
+      &__image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        &__profile {
+          width: 60%;
+          border-radius: 280px;
+        }
+      }
+    }
+
+    .information {
+      margin-top: 40px;
+      flex-direction: column;
+
+      .about {
+        width: 100%;
+      }
+
+      .skills {
+        margin-top: 30px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .container {
+    .header {
+      &__title {
+        &__introduction {
+          font-size: 20px;
+        }
+
+        &__name {
+          font-size: 40px;
+        }
+
+        &__description {
+          font-size: 20px;
+        }
+      }
+      &__image {
+        &__profile {
+          width: 100%;
+        }
+      }
+    }
+
+    .information {
+      .about {
+        &__title {
+          font-size: 20px;
+        }
+
+        &__text {
+          font-size: 14px;
+        }
+      }
+
+      .skills {
+        .title-skills {
+          font-size: 20px;
+        }
+
+        .range {
+          .conteudo {
+            .title {
+              font-size: 14px;
+            }
+
+            .circles {
+              &__full-circle,
+              &__empty-circle {
+                width: 12px;
+                height: 12px;
+              }
             }
           }
         }
