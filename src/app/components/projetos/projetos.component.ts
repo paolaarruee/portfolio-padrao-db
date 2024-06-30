@@ -34,12 +34,20 @@ export class ProjetosComponent {
       github: 'https://github.com/paolaarruee/desafio-back-DB',
       imagem: '../../../assets/img/projetos/aprendendoingles.png',
     },
+
     {
-      titulo: 'Naruto Java',
+      titulo: 'Biblioteca Front',
       descricao:
-        'Sistema Java para cadastro de personagens e simulação de batalhas.',
-      github: 'https://github.com/paolaarruee/naruto-java',
-      imagem: '../../../assets/img/projetos/naruto-java.png',
+        'Projeto front-end responsivo desenvolvido Angular e bootstrap',
+      github: 'https://github.com/paolaarruee/biblioteca-db-front',
+      imagem: '../../../assets/img/projetos/biblioteca-front.png',
+    },
+    {
+      titulo: 'Biblioteca Back',
+      descricao:
+        'Projeto back-end desenvolvido em .Net com banco de dados MySql',
+      github: 'https://github.com/paolaarruee/biblioteca-db',
+      imagem: '../../../assets/img/projetos/biblioteca-back.png',
     },
     {
       titulo: 'Portfolio Pessoal',
