@@ -10,32 +10,32 @@
       line-height: 5.5ch;
 
       &__introduction {
-        font-size: 34px;
+        font-size: 30px;
         font-weight: 700;
       }
 
       &__name {
         padding: 30px 0;
-        font-size: 80px;
+        font-size: 60px;
         font-weight: 700;
         text-wrap: nowrap;
       }
 
       &__description {
-        font-size: 34px;
+        font-size: 25px;
         font-weight: 400;
       }
     }
 
     &__image {
-      width: 40%;
+      width: 50%;
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
 
       &__profile {
-        width: 70%;
+        width: 280px;
         height: auto;
-        max-height: 480px;
+        max-height: 290px;
         border-radius: 4px;
       }
     }
@@ -43,7 +43,7 @@
 
   .information {
     width: 100%;
-    margin-top: 45px;
+    margin-top: 15px;
     display: flex;
     justify-content: space-between;
 
@@ -51,15 +51,15 @@
       width: 50%;
 
       &__title {
-        font-size: 38px;
+        font-size: 28px;
         line-height: 44px;
         font-weight: 600;
       }
 
       &__text {
-        margin-top: 40px;
-        font-size: 24px;
-        line-height: 30px;
+        margin-top: 15px;
+        font-size: 18px;
+        line-height: 20px;
       }
     }
 
@@ -67,13 +67,13 @@
       width: 40%;
 
       .title-skills {
-        font-size: 38px;
+        font-size: 28px;
         line-height: 44px;
         font-weight: 600;
       }
 
       .range {
-        margin-top: 40px;
+        margin-top: 15px;
         width: 100%;
         display: flex;
 
@@ -83,26 +83,26 @@
 
           .title {
             width: 50%;
-            font-size: 24px;
+            font-size: 18px;
           }
 
           .circles {
-            width: 50%;
+            width: 30%;
             display: flex;
             justify-content: center;
             gap: 7px;
 
             &__full-circle {
-              width: 20px;
-              height: 20px;
+              width: 15px;
+              height: 15px;
               background-color: #eab53d;
               border: 2px solid #eab53d;
               border-radius: 90%;
             }
 
             &__empty-circle {
-              width: 20px;
-              height: 20px;
+              width: 15px;
+              height: 15px;
               border: 2px solid #eab53d;
               border-radius: 90%;
             }
@@ -140,7 +140,7 @@
         }
 
         &__text {
-          margin-top: 20px;
+          margin-top: 10px;
           font-size: 18px;
         }
       }
@@ -151,7 +151,7 @@
         }
 
         .range {
-          margin-top: 20px;
+          margin-top: 10px;
           width: 100%;
           display: flex;
 
@@ -204,14 +204,14 @@
         justify-content: center;
 
         &__profile {
-          width: 60%;
-          border-radius: 280px;
+          width: 280px;
+
         }
       }
     }
 
     .information {
-      margin-top: 40px;
+      margin-top: 20px;
       flex-direction: column;
 
       .about {
@@ -219,7 +219,7 @@
       }
 
       .skills {
-        margin-top: 30px;
+        margin-top: 20px;
         width: 100%;
       }
     }
@@ -244,7 +244,7 @@
       }
       &__image {
         &__profile {
-          width: 100%;
+          max-width:280px;
         }
       }
     }
